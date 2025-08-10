@@ -15,11 +15,15 @@ footer {
 }
 
 main {
-    color: var(--base-font-color)
+    color: var(--base-font-color);
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
 }
 
 article a {
-    color: var(--c-magenta)
+    color: var(--c-magenta);
+    flex: 1;
 }
 
 article a:hover {
@@ -28,26 +32,49 @@ article a:hover {
 
 .subsection {
     border: 3px solid var(--c-cyan);
-    margin-bottom: 1rem;
-    padding: 1rem;
-}
-
-.subsection h3 {
-    margin-top: 0;
 }
 
 nav {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  width: 100%;
+  padding: 0.5rem 0;
 }
 
 nav ul {
-    list-style-type: none;
-    display: flex;
-    margin: 0;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
 }
 
-nav ul li {
-    margin: 0 1rem;
+nav ul li a {
+  color: blue;
+}
+
+nav form {
+  margin-top: 0.5rem;
+  text-align: left;
+}
+
+aside {
+    color: var(--c-green);
+    width: 300px;
+}
+
+aside a {
+    color: var(--c-red)
+}
+
+aside a:hover {
+    color: var(--c-blue)
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+article h2,
+article h3 {
+    padding-top: 50px;
 }
